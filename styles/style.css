@@ -1,27 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 /* shared */
-.web-width{
+.web-width {
     width: 75%;
     max-width: 1100px;
     margin: 0 auto;
 }
+
 .poppins {
-  font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
+
 .inter {
-  font-family: "Inter", sans-serif;
+    font-family: "Inter", sans-serif;
 }
-.text-align{
+
+.text-align {
     text-align: center;
 }
-.primary-btn{
+
+.primary-btn {
     padding: .8rem 1rem;
     font-size: 1rem;
     font-weight: 500;
@@ -31,17 +35,20 @@
     border: none;
     margin-top: 18px;
 }
-.white{
-    color: white ;
+
+.white {
+    color: white;
 }
-.black{
+
+.black {
     color: black !important;
 }
+
 /* shared */
 
 /* heading start */
-.heading{
-    background:linear-gradient(0deg, #121212, #12121200), url("../images/donation1.jpg");
+.heading {
+    background: linear-gradient(0deg, #121212, #12121200), url("../images/donation1.jpg");
     background-size: cover;
     min-height: 524px;
     background-repeat: no-repeat;
@@ -52,18 +59,20 @@
     margin-bottom: 97px;
 }
 
-.heading-container{
+.heading-container {
     max-width: 619px;
     margin: 0 auto;
-    
+
 }
-.heading-title{
+
+.heading-title {
     color: white;
     font-weight: 700;
     font-size: 3rem;
     text-align: center;
 }
-.heading-description{
+
+.heading-description {
     color: white;
     font-weight: 400;
     font-size: 0.8rem;
@@ -71,16 +80,19 @@
     line-height: 1.3rem;
     margin-top: 18px;
 }
+
 /* heading end */
 
 /* donate start */
-.donate{
-    margin-bottom: 22px;
+.donate {
+    margin-bottom: 97px;
 }
-.donate-taka-container{
-    margin: 38px 0;
+
+.donate-taka-container {
+    margin-top: 38px;
 }
-.taka{
+
+.taka {
     font-size: 1.3rem;
     font-weight: 700;
     background-color: #FAFAFA;
@@ -91,42 +103,147 @@
     align-items: center;
     color: #707070;
 }
-.donate-taka{
+
+.donate-taka {
     max-width: 573px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
     justify-content: space-between;
     gap: 11px;
 }
-.taka-200{
+
+.taka-two {
     background-color: #FFEEEE;
     border: 2px solid #FF5959;
 }
-.other-amount{
+
+.other-amount {
     color: #B3B3B3 !important;
 }
-.horizontal{
+
+.horizontal {
     max-width: 573px;
     margin: 0 auto;
     color: #DADADA;
     margin-top: 7px;
 }
+
 /* donate end */
 
+/* donate plan start */
+.donate-plan {
+    margin-bottom: 97px;
+}
+
+.donate-plan-card {
+    max-width: 270px;
+    min-height: 267px;
+    background-color: rgba(79, 157, 166, 0.1);
+    padding: 40px 16px;
+    border-radius: 5px;
+    margin-top: 37px;
+    margin-bottom: 97px;
+}
+
+.card-two {
+    background-color: rgba(255, 89, 89, 0.1);
+}
+
+.card-tree {
+    background-color: #FFF4D6;
+}
+
+.donate-plan-card h4 {
+    margin-bottom: 12px;
+    margin-top: 23px;
+}
+
+.donate-plan-card p {
+    font-size: .8rem;
+    font-weight: 400;
+    color: #707070;
+}
+
+.donate-plan-card-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* donate plan end */
+.donation-update-title {
+    color: white;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.donation-update-description {
+    color: white;
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    margin-top: 18px;
+}
+
+.content {
+    max-width: 369px;
+    flex: 1;
+}
+
+.donation-update-container {
+    margin: 97px 0;
+    display: flex;
+    gap: 62px;
+    align-items: center;
+}
+
+.image {
+
+    flex: 1;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.order-one {
+    order: 1;
+}
+
+.order-two {
+    order: 2;
+}
 
 /* media query */
-@media screen and (max-width:576px) {
-    .heading-title{
+@media screen and (max-width: 576px) {
+    .heading-title {
         font-size: 2rem;
     }
-    .heading-description{
+
+    .heading-description {
         font-size: 0.5rem;
     }
-    .donate-taka{
-        grid-template-columns: repeat(2,1fr);
+
+    .donate-taka {
+        grid-template-columns: repeat(2, 1fr);
     }
-    .taka-50{
+
+    .taka-last {
         grid-column: span 2;
+    }
+
+    .donate-plan-card-container,
+    .donation-update-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .order-one {
+        order: 2;
+    }
+
+    .order-two {
+        order: 1;
     }
 }
