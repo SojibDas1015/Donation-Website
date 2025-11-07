@@ -31,7 +31,13 @@
     border: none;
     margin-top: 18px;
 }
-
+.white{
+    color: white ;
+}
+.black{
+    color: black !important;
+}
+/* shared */
 
 /* heading start */
 .heading{
@@ -43,6 +49,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 97px;
 }
 
 .heading-container{
@@ -64,7 +71,48 @@
     line-height: 1.3rem;
     margin-top: 18px;
 }
+/* heading end */
 
+/* donate start */
+.donate{
+    margin-bottom: 22px;
+}
+.donate-taka-container{
+    margin: 38px 0;
+}
+.taka{
+    font-size: 1.3rem;
+    font-weight: 700;
+    background-color: #FAFAFA;
+    padding: 30px 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #707070;
+}
+.donate-taka{
+    max-width: 573px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: space-between;
+    gap: 11px;
+}
+.taka-200{
+    background-color: #FFEEEE;
+    border: 2px solid #FF5959;
+}
+.other-amount{
+    color: #B3B3B3 !important;
+}
+.horizontal{
+    max-width: 573px;
+    margin: 0 auto;
+    color: #DADADA;
+    margin-top: 7px;
+}
+/* donate end */
 
 
 /* media query */
@@ -74,5 +122,11 @@
     }
     .heading-description{
         font-size: 0.5rem;
+    }
+    .donate-taka{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .taka-50{
+        grid-column: span 2;
     }
 }
